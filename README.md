@@ -2,6 +2,8 @@
 
 [![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-message-bar "View this project on npm")
 
+![Screenshot](https://s14.postimg.org/873vmlwfl/examplegif.gif)
+
 Android like circular progress bar in react-native that works on both Android and IOS.
 
 
