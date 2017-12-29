@@ -1,0 +1,40 @@
+{
+  "name": "react-native-loading-spinner-modal",
+  "version": "1.0.0",
+  "description": "A spinner modal, android like circular progress bar",
+  "main": "index.js",
+  "private": false,
+  "author": "Senthilbalajiganesan <senthil.g.balaji@gmail.com> (https://github.com/senthilbalajiganesan)",
+  "scripts": {
+    "start": "react-native start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:senthilbalajiganesan/react-native-loading-spinner-modal.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "loading",
+    "android",
+    "spinner",
+    "activityIndicator",
+    "status",
+    "progressBar",
+    "circular"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "index.js",
+    "LoadingModal.js",
+    "LoadingModalManager.js",
+    "ModalViewBG.js"
+    "LICENSE"
+  ],
+  "bugs": {
+    "url": "https://github.com/senthilbalajiganesan/react-native-loading-spinner-modal/issues"
+  },
+  "license": "MIT"
+}
