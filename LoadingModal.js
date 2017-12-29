@@ -28,6 +28,18 @@ class LoadingModal extends Component {
   setNewState(newState) {
     this.setState(newState);
   }
+  setToOldState() {
+    this.setState({
+      showModal: false,
+      text: "",
+      subText: "",
+      cancelable: true,
+      spinnerColor: "#098",
+      spinnerSize: "large",
+      textColor: "#000",
+      subTextColor: "#000"
+    });
+  }
 
   render() {
     const { visible, text } = this.props;

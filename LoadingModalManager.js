@@ -13,6 +13,7 @@ class LoadingModalManager {
     if (this.currentLoadingModal !== null) {
       this.hideLoadingModal();
     }
+    this.currentLoadingModal.setToOldState();
     this.currentLoadingModal.setNewState(newState);
     this.currentLoadingModal.showModal();
   };
