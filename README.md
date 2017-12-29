@@ -10,9 +10,6 @@ Android like circular progress bar in react-native that works on both Android an
 - [Installation](#installation)
 - [Usage](#usage)
 - [Hide the Message Bar Alert](#hide-the-message-bar-alert)
-- [Customize Alert Type](#customize-alert-type)
-- [Customize Alert Content](#customize-alert-content)
-- [Customize View Layout](#customize-view-layout)
 - [Properties](#properties)
 - [License](#license)
 
@@ -73,8 +70,26 @@ componentWillUnmount() {
 // Call this method after registering your LoadingModal as the current loadingModal
 // By calling this method the registered loadingModal will be displayed
 // This is useful to show the loadingModal from your current page or a child component
-MessageBarManager.showAlert({
+LoadingModalManager.showLoadingModal({
   text: 'your text goes here', //default as `loading...`
   subText: 'Your alert message goes here',  //default ""
 });
 ```
+
+
+## Hide the Loading modal
+```javascript
+// You can force the current loadingmodal to be hidden through the Manager
+LoadingModalManager.hideLoadingModal();
+```
+
+
+## Properties
+Prop                  | Type     | Default              | Description
+--------------------- | -------- | -------------------- | -----------
+text                  | String   | Loading...           | heading text of the loading dialog
+subText               | String   |                      | SubText for the loading Modal
+spinnerSize           | String   | large                |  `large` or `small`
+textColor             | String   | #000                 | Any hex color code can be passed
+subTextColor          | String   | #000                 | Any hex color code can be passed
+spinnerColor          | String   | #098                 | Any hex color code can be passed
