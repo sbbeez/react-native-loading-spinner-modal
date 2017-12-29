@@ -11,9 +11,8 @@ Android like circular progress bar in react-native that works on both Android an
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Hide the Message Bar Alert](#hide-the-message-bar-alert)
+- [Hide the Lodaing Modal](#hide-the-message-bar-alert)
 - [Properties](#properties)
-- [License](#license)
 
 ## Features
 - Android and iOS capable
