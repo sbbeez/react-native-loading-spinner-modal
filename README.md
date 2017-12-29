@@ -8,16 +8,12 @@ Android like circular progress bar in react-native that works on both Android an
 ## Content
 - [Features](#features)
 - [Installation](#installation)
-- [Basic Usage](#basic-usage)
+- [Usage](#usage)
 - [Hide the Message Bar Alert](#hide-the-message-bar-alert)
 - [Customize Alert Type](#customize-alert-type)
 - [Customize Alert Content](#customize-alert-content)
 - [Customize View Layout](#customize-view-layout)
-- [Customize Position and Animation, Twitter Style!](#customize-position-and-animation-twitter-style)
 - [Properties](#properties)
-- [Contributing](#contributing)
-- [TODOS](#todos)
-- [Apps using this library](#apps-using-this-library)
 - [License](#license)
 
 ## Features
@@ -38,3 +34,14 @@ or
 ```batch
 $ yarn add react-native-loading-spinner-modal
 ```
+
+## Usage
+1. Import the `react-native-loading-spinner-modal` package
+```javascript
+import {
+  LoadingModal,
+  LoadingModalManager
+} from "react-native-loading-spinner-modal";
+```
+
+2. Add the `LoadingModal` to your render function
