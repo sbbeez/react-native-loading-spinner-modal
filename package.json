@@ -30,7 +30,7 @@
     "index.js",
     "LoadingModal.js",
     "LoadingModalManager.js",
-    "ModalViewBG.js"
+    "ModalViewBG.js",
     "LICENSE"
   ],
   "bugs": {
