@@ -1,4 +1,4 @@
-#react-native-loading-spinner-modal
+# react-native-loading-spinner-modal
 
 [![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-message-bar "View this project on npm")
 
@@ -36,7 +36,7 @@ $ yarn add react-native-loading-spinner-modal
 ```
 
 ## Usage
-1. Import the `react-native-loading-spinner-modal` package
+- 1. Import the `react-native-loading-spinner-modal` package
 ```javascript
 import {
   LoadingModal,
@@ -44,4 +44,37 @@ import {
 } from "react-native-loading-spinner-modal";
 ```
 
-2. Add the `LoadingModal` to your render function
+- 2. Add the `LoadingModal` to your render function
+Note: Add it at the very end of your render function, the alert will then be displayed over any component of the view
+```javascript
+// Within your render function.
+// Include the LoadingModal once within your top View element
+<LoadingModal ref="loadingmodal" />
+```
+
+- 3. Register and Release your Loading Modal as the current main alert
+```javascript
+componentDidMount() {
+  // Register the alert located on this master page
+  // This LoadingModal will be accessible from the current (same) component, and from its child component
+  // The LoadingModal is then declared only once, in your main component.
+  LoadingModalManager.registerModal(this.refs.loadingmodal);
+}
+
+componentWillUnmount() {
+  // Remove the LoadingModal located on this master page from the manager
+  LoadingModalManager.unregisterModal();
+}
+```
+
+
+- 4. Display the Loading Modal on demand
+```javascript
+// Call this method after registering your LoadingModal as the current loadingModal
+// By calling this method the registered loadingModal will be displayed
+// This is useful to show the loadingModal from your current page or a child component
+MessageBarManager.showAlert({
+  text: 'your text goes here', //default as `loading...`
+  subText: 'Your alert message goes here',  //default ""
+});
+```
